@@ -1,0 +1,59 @@
+# ============================
+# WordPress Core Files
+# ============================
+/wp-admin/
+/wp-includes/
+
+# Allow custom files inside wp-content except uploads, cache
+!wp-content/
+wp-content/*
+
+# ============================
+# wp-content Exceptions
+# (These will be committed)
+# ============================
+!wp-content/themes/
+!wp-content/plugins/
+!wp-content/mu-plugins/
+!wp-content/languages/
+
+# ============================
+# Files to Ignore in wp-content
+# ============================
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+wp-content/ai1wm-backups/
+wp-content/debug.log
+
+# ============================
+# WordPress Sensitive Files
+# ============================
+wp-config.php
+wp-config-local.php
+wp-config-sample.php
+
+# ============================
+# Server Files
+# ============================
+*.log
+*.sql
+*.tar.gz
+*.zip
+
+# ============================
+# OS / Editor Files
+# ============================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# ============================
+# Node / Composer
+# ============================
+node_modules/
+vendor/
